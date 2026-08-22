@@ -3,4 +3,6 @@ bin/
 obj/
 Assets/Mod/dvdroot_ps4/event/*.js
 Assets/Mod/dvdroot_ps4/event/*.bak
+gitSSHKey
+gitSSHKey.pub
 
