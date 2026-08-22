@@ -1,0 +1,110 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="BB_Fog_Gate_Randomizer.UserControls.RandomizerSettings">
+    <ScrollViewer>
+        <Grid
+            Margin="5"
+            ColumnDefinitions="*">
+                <Grid
+                    ColumnDefinitions="*, *"
+                    RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                    Grid.Column="0">
+                        <ComboBox
+                            Name="GatesComboBox"
+                            SelectedIndex="0"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="0 5 0 5"
+                            MinWidth="160">
+                            <ComboBoxItem>All Gates</ComboBoxItem>
+                            <ComboBoxItem>All Gates (DLC excluded)</ComboBoxItem>
+                            <!--<ComboBoxItem>Boss Gates Only</ComboBoxItem>-->
+                            <!--<ComboBoxItem>Boss Gates Only (DLC excluded)</ComboBoxItem>-->
+                        </ComboBox>
+                        <TextBlock
+                            ToolTip.Tip="Which gates should be Randomized"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            Text="Gates"></TextBlock>
+                    
+                        <CheckBox
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            IsChecked="False"
+                            Name="AllowBossFightEscapeCheckBox"></CheckBox>
+                        <TextBlock
+                            ToolTip.Tip="If enabled doesn't require killing  the boss to use gates inside its arena"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            Text="Allow Boss Fight escape"></TextBlock>
+                    
+                        <CheckBox
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            IsChecked="True"
+                            Name="ScaleCheckBox"></CheckBox>
+                        <TextBlock
+                            VerticalAlignment="Center"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            ToolTip.Tip="If Bosss Damage / HP should be adjusted based on distance from spawn."
+                            Text="Scale Bosses"></TextBlock>
+                        <ComboBox
+                            Name="ScalingDifficultyBox"
+                            Margin="0 5 0 5"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            SelectedIndex="1">
+                            <ComboBoxItem
+                                ToolTip.Tip="Halfs the Bosses base HP and Damage used in scaled HP / Damage calculations."
+                                >Easy</ComboBoxItem>
+                            <ComboBoxItem
+                                ToolTip.Tip="Uses the Bosses base HP and Damage for scaling."
+                                >Normal</ComboBoxItem>
+                            <ComboBoxItem
+                                ToolTip.Tip="Doubles the Bosses base HP and Damage used in scaled HP / Damage calculations."
+                                >Hard</ComboBoxItem>
+                        </ComboBox>
+                        <TextBlock
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            ToolTip.Tip="The difficulty of Scaling. Controlls the amount of Damage Bosses deal and how much HP they have."
+                            VerticalAlignment="Center"
+                            Text="Scaling Difficulty"></TextBlock>
+                    
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="10"
+                            Grid.Row="4"
+                            Text="--- Win Conditions ---">
+                        </TextBlock>
+                        <ComboBox
+                            Name="WinConditionBox"
+                            SelectedIndex="0"
+                            Grid.Row="5"
+                            Grid.Column="0">
+                            <ComboBoxItem
+                                ToolTip.Tip="Require Defeating Margo's Wet Nurse, in order to access the final Boss."
+                                >Defeat Margo's Wet Nurse</ComboBoxItem>
+                            <ComboBoxItem
+                                ToolTip.Tip="Require Defeating all Bosses, in order to access the final Boss."
+                                >Defeat All Bosses</ComboBoxItem>
+                            <ComboBoxItem
+                                ToolTip.Tip="Require Defeating all Bosses, that are mandatory in the normal Game, in order to access the final Boss."
+                                >Defeat All required Bosses</ComboBoxItem>
+                        </ComboBox>
+                    <TextBlock
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        ToolTip.Tip="Which Condition the player has to fulfill, in order to be able to fight the final Boss."
+                        Text="Win Condition"></TextBlock>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+    
+</UserControl>

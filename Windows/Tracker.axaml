@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="300"
+        x:Class="BB_Fog_Gate_Randomizer.Windows.Tracker"
+        Title="Tracker"
+        Width="450"
+        Height="300">
+    <Grid
+        RowDefinitions="Auto, *, Auto">
+        <Border
+            BorderBrush="White"
+            BorderThickness="0 0 0 1"
+            Grid.Row="0">
+            <TextBlock
+                ToolTip.Tip="The Gate you came from by warp"
+                TextWrapping="Wrap"
+                Margin="5"
+                Name="CurrentGateBlock"></TextBlock>
+        </Border>
+        <ScrollViewer
+            Grid.Row="1">
+            <StackPanel
+                Margin="5">
+                <TextBlock
+                    ToolTip.Tip="The Gates you can go to"
+                    TextWrapping="Wrap"
+                    Name="WalkableGatesBlock"></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+        <Border
+            BorderBrush="White"
+            BorderThickness="0 1 0 0"
+            Grid.Row="2">
+            <Grid
+                ColumnDefinitions="Auto, *, Auto"
+                Margin="5">
+                <TextBlock
+                    ToolTip.Tip="Press Shift and a number, to move through that gate."
+                    Grid.Column="0"
+                    VerticalAlignment="Center"
+                    Text="SHIFT + [Number]"></TextBlock>
+                <TextBox
+                    Grid.Column="1"
+                    Margin="5"
+                    Name="WarpDelayBox"
+                    Text="7"
+                    PlaceholderText="Warp Delay"
+                    ToolTip.Tip="Changes the Delay after warping, use to avoid Spoilers by the tracker."></TextBox>
+                <Button
+                    ToolTip.Tip="Press this to reset the tracker to the beginning of the game."
+                    Name="ReturnToStartButton"
+                    Grid.Column="2">
+                    Return to Start
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

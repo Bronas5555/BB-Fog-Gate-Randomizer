@@ -1,0 +1,142 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="BB_Fog_Gate_Randomizer.UserControls.RandomizerControllBar">
+    <Border
+        BorderThickness="0 1 0 1"
+        BorderBrush="White">
+        <Grid
+        Margin="5"
+        ColumnDefinitions="Auto, *, Auto">
+        <Grid
+            RowDefinitions="Auto, Auto"
+            VerticalAlignment="Bottom"
+            Grid.Column="0">
+                <Button 
+                    ToolTip.Tip="Launches the Live Tracker. It tells you where you can go from your current position. Has to be controlled manually."
+                    Grid.Row="0"
+                    Name="TrackerButton"
+                    HorizontalAlignment="Stretch">
+                        <TextBlock
+                            Text="Tracker"
+                            HorizontalAlignment="Center"></TextBlock>
+                </Button>
+                <Button 
+                    ToolTip.Tip="Opens the Folder containing the Spoiler Logs."
+                    Grid.Row="1"
+                    HorizontalAlignment="Stretch"
+                    Name="SpoilerLogsButton">Spoiler Logs</Button>
+        </Grid>
+        <Grid
+            ColumnDefinitions="*, *"
+            HorizontalAlignment="Center"
+            Grid.Column="1"
+            VerticalAlignment="Bottom">
+            <Grid
+                ShowGridLines="False"
+                RowDefinitions="*, Auto, Auto"
+                Grid.Column="0">
+                <TextBox
+                    Name="PresetNameTextBox"
+                    MinWidth="150"
+                    Margin="0 0 10 0"
+                    Grid.Row="1"
+                    Grid.Column="0"></TextBox>
+                <ComboBox
+                    Grid.Row="2"
+                    Margin="0 0 10 0"
+                    MinWidth="150"
+                    Grid.Column="0"
+                    Name="PresetComboBox"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Stretch">
+                    
+                </ComboBox>
+            </Grid>
+            <Grid
+                HorizontalAlignment="Stretch"
+                Grid.Column="1"
+                RowDefinitions="Auto, Auto, Auto, Auto"
+                ColumnDefinitions="*">
+                <Button
+                    Name="PresetFolderButton"
+                    Grid.Row="0">Preset Folder</Button>
+                <Button
+                    Name="DeletePresetButton"
+                    Grid.Row="1">Delete Preset</Button>
+                <Button 
+                    HorizontalAlignment="Stretch"
+                    Name="SavePresetButton"
+                    Grid.Row="2">Save Preset</Button>
+                <Button 
+                    Grid.Row="3"
+                    Name="LoadPresetButton"
+                    HorizontalAlignment="Stretch">Load Preset</Button>
+            </Grid>
+        </Grid>
+        <Grid
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            RowDefinitions="Auto, Auto, Auto, Auto"
+            Grid.Column="2">
+            <Grid
+                ColumnDefinitions="*, Auto"
+                Grid.Row="0">
+                <TextBox
+                    VerticalAlignment="Center"
+                    Margin="0 0 0 5"
+                    Grid.Column="0"
+                    Name="SeedTextBox"
+                    PasswordChar="*"
+                    RevealPassword="True"
+                    PlaceholderText="Seed"
+                    ToolTip.Tip="The Randomizer's Seed. The same seed, with the same settings will produce the same result.">
+                </TextBox>
+                <Button
+                    Margin="0 0 0 5"
+                    Height="32"
+                    VerticalAlignment="Center"
+                    Name="HideSeedButton"
+                    Grid.Column="1">
+                    <TextBlock
+                        Name="HideSeedButtonLabel"
+                        Text="S"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"></TextBlock>
+                </Button>
+            </Grid>
+            <Button
+                Name="RandomizeButton"
+                HorizontalAlignment="Stretch"
+                Grid.Row="1">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    Text="Randomize"></TextBlock>
+            </Button>
+                
+                <Button 
+                    ToolTip.Tip="Generates a new Seed based on the system's clock"
+                    Grid.Row="2"
+                    HorizontalAlignment="Stretch"
+                    Name="GenerateNewSeedButton">
+                        <TextBlock
+                            Text="Generate new Seed"
+                            HorizontalAlignment="Center"></TextBlock>
+                </Button>
+                <Button 
+                    ToolTip.Tip="Opens the Folder with the Mod. Use this in your Mod Manager AFTER pressing Randomize."
+                    Grid.Row="3"
+                    Name="OpenModFolderButton"
+                    HorizontalAlignment="Stretch">
+                    <TextBlock
+                        Text="Open Generated Mod Folder"
+                        HorizontalAlignment="Center">
+                    </TextBlock>
+            </Button>
+        </Grid>
+    </Grid>
+    </Border>
+    
+</UserControl>
