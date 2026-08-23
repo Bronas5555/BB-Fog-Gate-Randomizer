@@ -97,7 +97,7 @@ Seed: -434454074
 
 ## Credits and Thanks
 #### Development Apps
-* [Smithbox](https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Map Files.
+* [Smithbox](https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Game Files.
 * [DarkScript3](https://github.com/AinTunez/DarkScript3) Amazing IDE for editing FromSoftware EMEVD Event Scripts.
 #### Ressources
 * [Souls Modding Wiki](https://www.soulsmodding.com/doku.php?id=start) Amazing ressources for learning to Mod FromSoftware Games.
