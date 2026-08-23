@@ -105,7 +105,7 @@ Seed: -434454074
 
 #### Libarys
 * [SoulsFormats](https://github.com/juicermv/SoulsFormats) Easy to use library used to read and edit Param Files
-### Applications
+#### Applications
 * [ShadPS4](https://shadps4.net/) for allowing for easy testing for mods and allowing Bloodborne to be run on PC.
 * [BB Launcher](https://github.com/rainmakerv3/BB_Launcher) for making an awesome Launcher and Mod Manager for Bloodborne.
 
