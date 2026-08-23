@@ -1,5 +1,6 @@
 using System;
 using Avalonia.Controls;
+using BB_Fog_Gate_Randomizer.AppEnvironment;
 using BB_Fog_Gate_Randomizer.DarkScript3API;
 using BB_Fog_Gate_Randomizer.Randomizer;
 using BB_Fog_Gate_Randomizer.Randomizer.Fog;
@@ -21,6 +22,6 @@ public partial class MainWindow : Window
         
         //RandomizerBenchmark.StartBenchmark();
         
-        
+        FolderStructure.EnsureFolderStructure();
     }
 }
