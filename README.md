@@ -25,6 +25,7 @@ This tutorial assumes you already have Bloodborne set up with shadPS4 (preferabl
 Download the Randomizer app from the [Releases page](https://github.com/Bronas5555/BB-Fog-Gate-Randomizer/releases).
 To function, the Randomizer needs the app [DarkScript3](https://github.com/AinTunez/DarkScript3/releases)
 Download it as well.
+Tested Version is 3.6.3.
 #### Step 2: Extracting Archives
 Extract the BB Fog Gate Randomizer Archive anywhere you want.
 Now extract DarkScript3 to the Directory `binarys` inside the Randomizer.
