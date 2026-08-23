@@ -1,4 +1,4 @@
-Added Warp from Cainhurst Interaction Entity to small / weird (makde bigger)
+Added Warp from Cainhurst Interaction Entity to small / weird (made bigger)
 Lecture Building add warp OBJs (Processed)
 
 
@@ -6,8 +6,4 @@ Integrate Abduction Warps (I know of 2)
 
 MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl Warp doesn't work
 
-Laurence test behaviour, if skull is obtained before pendant
-
-Softlock: Warp after Rom has to be repeatable
-
-
+Laurence test behavior, if skull is obtained before pendant
