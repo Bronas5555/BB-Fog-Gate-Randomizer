@@ -100,8 +100,11 @@ Seed: -434454074
 * [Smithbox](https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Game Files.
 * [DarkScript3](https://github.com/AinTunez/DarkScript3) Amazing IDE for editing FromSoftware EMEVD Event Scripts.
 #### Ressources
-* [Souls Modding Wiki](https://www.soulsmodding.com/doku.php?id=start) Amazing ressources for learning to Mod FromSoftware Games.
+* [Souls Modding Wiki](https://www.soulsmodding.com/doku.php?id=start) Amazing resources for learning to Mod FromSoftware Games.
 * [Bloodborne Wiki](https://www.bloodborne-wiki.com/p/index.html) Very helpful wiki with Item IDs and information about the game.
+
+#### Libarys
+* [SoulsFormats](https://github.com/juicermv/SoulsFormats) Easy to use library used to read and edit Param Files
 
 * [ShadPS4](https://shadps4.net/) for allowing for easy testing for mods and allowing Bloodborne to be run on PC.
 * [BB Launcher](https://github.com/rainmakerv3/BB_Launcher) for making an awesome Launcher and Mod Manager for Bloodborne.
