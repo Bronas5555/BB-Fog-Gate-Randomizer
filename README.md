@@ -97,14 +97,14 @@ Seed: -434454074
 
 ## Credits and Thanks
 #### Development Apps
-* [Smithbox] (https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Map Files.
-* [DarkScript3] (https://github.com/AinTunez/DarkScript3) Amazing IDE for editing FromSoftware EMEVD Event Scripts.
+* [Smithbox](https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Map Files.
+* [DarkScript3](https://github.com/AinTunez/DarkScript3) Amazing IDE for editing FromSoftware EMEVD Event Scripts.
 #### Ressources
-* [Souls Modding Wiki] (https://www.soulsmodding.com/doku.php?id=start) Amazing ressources for learning to Mod FromSoftware Games.
-* [Bloodborne Wiki] (https://www.bloodborne-wiki.com/p/index.html) Very helpful wiki with Item IDs and information about the game.
+* [Souls Modding Wiki](https://www.soulsmodding.com/doku.php?id=start) Amazing ressources for learning to Mod FromSoftware Games.
+* [Bloodborne Wiki](https://www.bloodborne-wiki.com/p/index.html) Very helpful wiki with Item IDs and information about the game.
 
-* [ShadPS4] (https://shadps4.net/) for allowing for easy testing for mods and allowing Bloodborne to be run on PC.
-* [BB Launcher] (https://github.com/rainmakerv3/BB_Launcher) for making an awesome Launcher and Mod Manager for Bloodborne.
+* [ShadPS4](https://shadps4.net/) for allowing for easy testing for mods and allowing Bloodborne to be run on PC.
+* [BB Launcher](https://github.com/rainmakerv3/BB_Launcher) for making an awesome Launcher and Mod Manager for Bloodborne.
 
 
 
