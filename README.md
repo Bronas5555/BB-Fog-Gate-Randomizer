@@ -42,11 +42,11 @@ Start the Randomizer Application and adjust the Settings to your liking. Continu
 <details>
 	<summary>Step3.1: For Linux users</summary>
 	Unfortunately there isn't a native version of DarkScript for Linux. However, the Randomizer supports running DarkScript3 through wine. As long as wine is installed, is in your `PATH` and you have installed the .NET 6.0 Desktop and ASP.NET Runtimes everything should just work. 
-	Test wine by running:
-	
+Test wine by running:
 	`wine --version`
-	
-	If the command isn't found wine isn't installed or not in your path.
+If the command isn't found wine isn't installed or not in your path.
+Tested Wine Versions: 
+* wine-9.0 (Ubuntu 9.0~repack-4build3)
 </details>
 
 #### Step 4: Installing the Mod.
