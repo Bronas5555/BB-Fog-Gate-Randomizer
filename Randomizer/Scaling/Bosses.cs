@@ -84,23 +84,23 @@ public class Bosses
                 [new NumberSpan(3343, 3343), new NumberSpan(251000, 251193)], "Ebrietas", 1800, 17); //Child of the Moon Cathedral
 
         public static readonly ParamBoss Laurence =
-                new ParamBoss(450000, [new NumberSpan(450100, 450996)], "Laurence", 2700, 18); //Parishioner Omega
+                new ParamBoss(450000, [new NumberSpan(450100, 450996)], "Laurence", 2700, 22); //Parishioner Omega
 
         public static readonly ParamBoss LivingFailures = new ParamBoss(403050,
-                [new NumberSpan(6360, 6361), new NumberSpan(403100, 403420)], "Living Failures", 2700, 19); //Patient B
+                [new NumberSpan(6360, 6361), new NumberSpan(403100, 403420)], "Living Failures", 2700, 23); //Patient B
 
         public static readonly ParamBoss LadyMaria1 =
-                new ParamBoss(452000, [new NumberSpan(452000, 452725)], "Lady Maria 1", 1800, 19); //Female Hunter
+                new ParamBoss(452000, [new NumberSpan(452000, 452725)], "Lady Maria 1", 1800, 24); //Female Hunter
         public static readonly ParamBoss LadyMaria2 =
-                new ParamBoss(452001, [new NumberSpan(452000, 452725)], "Lady Maria 2", 1800, 19); //Female Hunter
+                new ParamBoss(452001, [new NumberSpan(452000, 452725)], "Lady Maria 2", 1800, 24); //Female Hunter
 
         public static readonly ParamBoss Ludwig1 = new ParamBoss(451000,
-                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Accursed", 2400, 18); //Ludwig
+                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Accursed", 2400, 13); //Ludwig
         public static readonly ParamBoss Ludwig2 = new ParamBoss(451001,
-                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Holy Blade", 2400, 18); //Ludwig
+                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Holy Blade", 2400, 31); //Ludwig
 
         public static readonly ParamBoss OrphanOfKos =
-                new ParamBoss(454000, [new NumberSpan(453000, 454500)], "Orphan of Kos", 2200, 20); //Final Boss
+                new ParamBoss(454000, [new NumberSpan(453000, 454500)], "Orphan of Kos", 2200, 25); //Final Boss
         
         //Mandatory Enemies
         public static readonly ParamBoss OrphanageKeyBrainSucker1 = new ParamBoss(106020, [new NumberSpan(-1, -1)],

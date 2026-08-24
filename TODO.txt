@@ -7,3 +7,6 @@ Integrate Abduction Warps (I know of 2)
 MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl Warp doesn't work
 
 Laurence test behavior, if skull is obtained before pendant
+
+Ludwig: When scaled, when at ca 60& hp, prey slaughtered, boss bar dissapears. Second phase cutscene still plays,
+then ludwig dead, lamp appears, Can't warp from hunters dream to lamp.

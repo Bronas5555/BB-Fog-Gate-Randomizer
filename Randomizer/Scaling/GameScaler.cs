@@ -108,7 +108,7 @@ public class GameScaler
 
                     //Don't Scale below 0.5,
                     //Doesn't do any damage below that (idk why)
-                    float percentage = Math.Max(depth / (maxDepth - maxDepth / 6f), 0.65f); 
+                    float percentage = Math.Max(depth / (float)maxDepth / (boss.ScalingTier * 0.1f), 0.35f); 
 
                     //Scaling Damage Value
                     int atkPhysScaled = Math.Max((int)Math.Round(atkPhys * percentage * _difficultyModifier), 1);
