@@ -96,6 +96,7 @@ public class EmevdHelper
     
     private static (string eventString, int eventId) EventFlagFogGateWarpEvent(MapName destinationMap, int interactionEntityId, int spawnPointEntityId, int eventFlagId)
     {
+        if(eventFlagId == 0) Console.WriteLine($"BAD: EventFlag is 0 for warp to {destinationMap.Name} Interaction: {interactionEntityId} spawnPoint: {spawnPointEntityId}");
         int eventId = int.Parse("7" + interactionEntityId.ToString().Substring(1));
         return ($"$Event({eventId}, Default, function() {{\n" +
                 $"   WaitFor(EventFlag({eventFlagId}));\n" +
@@ -186,7 +187,7 @@ public class EmevdHelper
                     gate.LinkedFogGate.MapName, 
                     gate.InteractionObjectEntityId,
                     gate.LinkedFogGate.SpawnPointEntityId,
-                    gate.requiredEventFlag);
+                    gate.RequiredEventFlag);
             } break;
             case WarpEventType.Warp:
             {

@@ -14,7 +14,7 @@ public class FogGate
     public List<Requirement> Requirements;
     public List<Requirement> Rewards;
     public WarpEventType     WarpEventType;
-    public int               requiredEventFlag;
+    public int               RequiredEventFlag;
     public List<ParamBoss>?  ParamBosses;
 
     //All Fog Gates which can be reached by walking from this Fog Gate
@@ -41,6 +41,7 @@ public class FogGate
         WarpEventType = warpEventType;
         MapName = mapName;
         ParamBosses = paramBosses;
+        RequiredEventFlag = requiredEventFlag;
     }
 
     public FogGate(
@@ -62,6 +63,7 @@ public class FogGate
         WarpEventType = warpEventType;
         MapName = mapName;
         ParamBosses = paramBoses;
+        RequiredEventFlag = requiredEventFlag;
     }
     
     public bool IsAccessible(PlayerState player)
