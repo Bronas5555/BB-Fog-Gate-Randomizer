@@ -10,3 +10,5 @@ Laurence test behavior, if skull is obtained before pendant
 
 Ludwig: When scaled, when at ca 60& hp, prey slaughtered, boss bar dissapears. Second phase cutscene still plays,
 then ludwig dead, lamp appears, Can't warp from hunters dream to lamp.
+
+When Randomizing without scaling, if previously it was randomized with scaling, Param file persists in generated mod folder

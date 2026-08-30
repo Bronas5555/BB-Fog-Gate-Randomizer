@@ -160,9 +160,9 @@ public static class FogGates
     //m34_00_00_00 Hunter's Nightmare (7)
     public static FogGate LaurenceArenaEntrance = new FogGate("Laurence, the First Vicar Arena Entrance", 3400998, 3401851, [], [Requirements.EyePendant], Maps.HuntersNightmare, WarpEventType.FogGateEventFlag, 13401850, [Bosses.Laurence]);
     public static FogGate LaurenceEntrance      = new FogGate("Laurence, the First Vicar Entrance", 3400997, 3401850, Maps.HuntersNightmare);
-    public static FogGate LudwigArenaEntrance   = new FogGate("Ludwig, the Holy Blade Arena Entrance", 3400996, 3401802, Maps.HuntersNightmare, WarpEventType.FogGateEventFlag, 13401800, [Bosses.Ludwig1, Bosses.Ludwig2]);
+    public static FogGate LudwigArenaEntrance   = new FogGate("Ludwig, the Holy Blade Arena Entrance", 3400996, 3401802, Maps.HuntersNightmare, WarpEventType.FogGateEventFlag, 9471, [Bosses.Ludwig1, Bosses.Ludwig2]);
     public static FogGate LudwigEntrance        = new FogGate("Ludwig, the Holy Blade Entrance", 3400995, 3401800, Maps.HuntersNightmare);
-    public static FogGate LudwigArenaExit   = new FogGate("Ludwig, the Holy Blade Arena Exit", 3400994, 3401803, Maps.HuntersNightmare, WarpEventType.FogGateEventFlag, 13401800, [Bosses.Ludwig1, Bosses.Ludwig2]);
+    public static FogGate LudwigArenaExit   = new FogGate("Ludwig, the Holy Blade Arena Exit", 3400994, 3401803, Maps.HuntersNightmare, WarpEventType.FogGateEventFlag, 9471, [Bosses.Ludwig1, Bosses.Ludwig2]);
     public static FogGate LudwigExit        = new FogGate("Ludwig, the Holy Blade Exit", 3400993, 3401801, Maps.HuntersNightmare);
     public static FogGate AddedWarpBackCathedralWard = new FogGate("Added Warp Back to Cathedral Ward", 3400992, 3401804, Maps.HuntersNightmare);
     

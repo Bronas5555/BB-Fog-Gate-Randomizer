@@ -95,7 +95,7 @@ public class Bosses
                 new ParamBoss(452001, [new NumberSpan(452000, 452725)], "Lady Maria 2", 1800, 24); //Female Hunter
 
         public static readonly ParamBoss Ludwig1 = new ParamBoss(451000,
-                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Accursed", 2400, 13); //Ludwig
+                [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Accursed", 2400, 31); //Ludwig
         public static readonly ParamBoss Ludwig2 = new ParamBoss(451001,
                 [new NumberSpan(3360, 3363), new NumberSpan(451100, 451610)], "Ludwig, the Holy Blade", 2400, 31); //Ludwig
 
