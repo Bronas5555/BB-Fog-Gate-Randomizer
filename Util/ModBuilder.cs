@@ -10,4 +10,9 @@ public class ModBuilder
         string destinationDir = "./Fog Gate Randomizer/Fog Gate Randomizer/dvdroot_ps4/map";
         FileUtil.CopyDirectory(sourceDir, destinationDir);
     }
+
+    public static void DeleteCreatedModFiles()
+    {
+        Directory.Delete("./Fog Gate Randomizer/Fog Gate Randomizer/", true);
+    }
 }

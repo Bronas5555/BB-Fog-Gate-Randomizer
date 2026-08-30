@@ -153,6 +153,9 @@ public partial class RandomizerControllBar : UserControl
         RandomizerProgressWindow.AllowContinue(false);
         RandomizerProgressWindow.Clear();
         
+        //Deleting Old Mod File Output
+        ModBuilder.DeleteCreatedModFiles();
+        
         //Making Sure al EMEVD Event Files are decompiled
         RandomizerProgressWindow.AddLogLine("Decompiling Game Files");
         await DarkScript3.BatchDecompileAsync("./Assets/Mod/dvdroot_ps4/event", "./WorkingDirectory");
