@@ -1,8 +1,8 @@
-Added Warp from Cainhurst Interaction Entity to small / weird (made bigger)
+Added Warp from Cainhurst Interaction Entity to small / weird
+
 Lecture Building add warp OBJs (Processed)
 
-
-Integrate Abduction Warps (I know of 2)
+Integrate Snatcher Warps. Needs Blood Starved beast Dead, but becomes unavailable after killing Rom
 
 MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl Warp doesn't work
 
