@@ -7,5 +7,3 @@ Integrate Snatcher Warps. Needs Blood Starved beast Dead, but becomes unavailabl
 MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl Warp doesn't work
 
 Laurence test behavior, if skull is obtained before pendant
-
-When First Warp to Ludwig, activating Lamp and traveling back to Hunter's Dream doesn't unlock DLC Warp Gravestone
