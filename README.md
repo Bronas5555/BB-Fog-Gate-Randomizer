@@ -1,6 +1,7 @@
 # BB Fog Gate Randomizer
 
 A WIP Fog Gate Randomizer inspired by the Fog Gate Randomizers for [Elden Ring](https://www.nexusmods.com/eldenring/mods/3295) and [Dark Souls 1](https://www.nexusmods.com/darksoulsremastered/mods/165).
+This Randomizer isn't finished yet. Softlocks, Bugs and Glitches will occur. If you find any issues, please report them under the Issues tab.
 
 ## General Idea
 Fog Gates are permanent now and traversing them sends you to another randomly choosen Fog Gate. The warps are static, meaning they don't change. Traversing Gate A will always send you to Gate B and traversing back through Gate B will send you back to Gate A.
