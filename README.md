@@ -97,6 +97,10 @@ Seed: -434454074
  - [Warp] Before a Gate Name means you will be warped here by the gate above.
  - (Loop) at the End of a gate Name means it can be reached from another path. To follow it in the spoiler log, search for the same name in the file. There the path will be expanded.
 
+## Gallery
+![Randomizer Application](https://github.com/Bronas5555/BB-Fog-Gate-Randomizer/blob/main/GitHubAssets/Screenshot%20from%202026-08-31%2019-34-01.png?raw=true)
+![Randomized Warp Example](https://github.com/Bronas5555/BB-Fog-Gate-Randomizer/blob/main/GitHubAssets/Warp.gif?raw=true)
+
 ## Credits and Thanks
 #### Development Apps
 * [Smithbox](https://github.com/vawser/Smithbox) Amazing Tool for editing and viewing FromSoftware Game Files.
