@@ -255,12 +255,7 @@ public static class FogGates
             MPGInfrontHemwickCharnelLaneCathedralWard,
             WarpToOldHuntersDLC]);
         VicarAmeliaEntrance.SetupWalkNeighbours([]); //Door can only be opened from other side
-        MPGBeforeOldYharnamLanternTowardsCathedralWard.SetupWalkNeighbours([
-            VicarAmeliaEntrance,
-            CathedralWardMPGToCathedralWard,
-            MPGBeforeSacrificalConnectionChurchCathedralWard,
-            MPGInfrontHemwickCharnelLaneCathedralWard,
-            WarpToOldHuntersDLC]);
+        MPGBeforeOldYharnamLanternTowardsCathedralWard.SetupWalkNeighbours([]); //Contraption
         MPGBeforeSacrificalConnectionChurchCathedralWard.SetupWalkNeighbours([
             VicarAmeliaEntrance,
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
