@@ -202,11 +202,7 @@ public static class FogGates
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
             MPGBeforeSacrificalConnectionChurchCathedralWard,
             MPGInfrontHemwickCharnelLaneCathedralWard]);*/
-        MPGBeforeOldYharnamLanternTowardsCathedralWard.SetupWalkNeighbours([
-            VicarAmeliaEntrance,
-            CathedralWardMPGToCathedralWard,
-            MPGBeforeSacrificalConnectionChurchCathedralWard,
-            MPGInfrontHemwickCharnelLaneCathedralWard]);
+        MPGBeforeOldYharnamLanternTowardsCathedralWard.SetupWalkNeighbours([]); //There's the contraption, which can only be activated from the other side.
         MPGBeforeSacrificalConnectionChurchCathedralWard.SetupWalkNeighbours([
             VicarAmeliaEntrance,
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
