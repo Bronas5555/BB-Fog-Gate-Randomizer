@@ -10,8 +10,7 @@
         Height="800">
     <Grid
         RowDefinitions="Auto, *, Auto">
-        <controls:TopToolBar
-            Grid.Row="0"></controls:TopToolBar>
+        
         <controls:RandomizerSettings
             Grid.Row="1"></controls:RandomizerSettings>
         <controls:RandomizerControllBar
