@@ -111,6 +111,7 @@ public class GameScaler
                     float treeTier = percentage * 25f;
 
                     float multiplier = Math.Max(treeTier / boss.ScalingTier, 0.4f);
+                    multiplier += _difficultyModifier;
 
                     //Scaling Damage Value
                     int atkPhysScaled = Math.Max((int)Math.Round(atkPhys * multiplier * _difficultyModifier), 1);
@@ -126,7 +127,7 @@ public class GameScaler
                     
                     Console.WriteLine($"Scaled Attack {row.Name}: " +
                                       $"{atkPhys}, {atkMag}, {atkFire}, {atkThun} --> " +
-                                      $"{atkPhysScaled}, {atkMagScaled}, {atkFireScaled}, {atkThunScaled} ({percentage})");
+                                      $"{atkPhysScaled}, {atkMagScaled}, {atkFireScaled}, {atkThunScaled} ({multiplier})");
                 }
             }
         }
