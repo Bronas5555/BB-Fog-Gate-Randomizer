@@ -1,15 +1,15 @@
 # BB Fog Gate Randomizer
 
-A WIP Fog gate Randomizer inspired by the Fog Gate Randomizers for [Elden Ring](https://www.nexusmods.com/eldenring/mods/3295) and [Dark Souls 1](https://www.nexusmods.com/darksoulsremastered/mods/165).
+A WIP Fog Gate Randomizer inspired by the Fog Gate Randomizers for [Elden Ring](https://www.nexusmods.com/eldenring/mods/3295) and [Dark Souls 1](https://www.nexusmods.com/darksoulsremastered/mods/165).
 
 ## General Idea
-Fog Gates are permanent now and traversing them sends you to another randomly choosen Fog Gate. The warps are static, meaning they don't change. Traversing Gate A will always send you to Gate B and vice versa.
+Fog Gates are permanent now and traversing them sends you to another randomly choosen Fog Gate. The warps are static, meaning they don't change. Traversing Gate A will always send you to Gate B and traversing back through Gate B will send you back to Gate A.
 
 ## Features
 * Choose between Gates: Randomize All, or exclude the DLC
-* Allow Boss Fight Escape: Don't require beating the Boss in order to use the Fog gates in it's arena
-* Scale Bosses: To accommodate the new progression path, scale Boss damage and HP
-* Scaling Difficulty: Choose between Easy, Normal and hard scaling
+* Allow Boss Fight Escape: Don't require beating the Boss in order to use the Fog Gates in it's arena
+* Scale Bosses: To accommodate the new progression path, scale Boss Damage and HP
+* Scaling Difficulty: Choose between Easy, Normal and Hard scaling
 * Different Win Conditions:
 	* Find and defeat Margo's Wet Nurse in order to access the Gherman fight.
 	* Find and defeat all Bosses in the Game.
@@ -42,6 +42,7 @@ Start the Randomizer Application and adjust the Settings to your liking. Continu
 
 <details>
 <summary>Step3.1: For Linux users</summary>
+	
 Unfortunately there isn't a native version of DarkScript for Linux. However, the Randomizer supports running DarkScript3 through wine. As long as wine is installed, is in your `PATH` and you have installed the .NET 6.0 Desktop and ASP.NET Runtimes everything should just work. 
 Test wine by running:
 ```bash
@@ -50,12 +51,13 @@ Test wine by running:
 If the command isn't found wine isn't installed or not in your path.
 Tested Wine Versions: 
 * wine-9.0 (Ubuntu 9.0~repack-4build3)
+
 </details>
 
 #### Step 4: Installing the Mod.
 The Randomizer works by generating a Mod File for your exact settings. In the bottom right there's a button `Open Generated Mod Folder`. It opens a Directory containing your mod File.
 #### Step 4.1: Installation with BB Launcher (Recommended)
-Open BB Launcher and press `Open Mods Folder`. Copy and Paste the Folder `Fog Gate Randomizer` over to the BB Launcher Mod Folder. Now it can be activated in BB Launcher's Mod Manager. This method is preferred, because it doesn't touch your game files.
+Open BB Launcher, and press `Open Mods Folder`. Copy and Paste the Folder `Fog Gate Randomizer` over to the BB Launcher Mod Folder. Now it can be activated in BB Launcher's Mod Manager. This method is preferred, because it doesn't touch your game files.
 #### Step 4.2: Manual Installation (Not recommended)
 Open your Bloodborne installation Directory. 
 You should have two Directorys `CUSAxxxx` and `CUSAxxxx-patch`.  Copy and overwrite the files from the generated Mod Directory into your `CUSAxxxx-patch` Directory. It is recommended to Back up the `CUSAxxxx-patch` Directory, before overwriting any files.
