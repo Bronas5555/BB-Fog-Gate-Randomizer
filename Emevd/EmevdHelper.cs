@@ -128,6 +128,7 @@ public class EmevdHelper
         int eventId = int.Parse("7" + interactionEntityId.ToString().Substring(1));
         return ($"$Event({eventId}, Default, function() {{\n" + 
                 $"   WaitFor(CharacterHasEventMessage(2800745, 10) && PlayerHasItem(ItemType.Goods, 4310));" +
+                //$"   WaitFor(CharacterHasEventMessage(2800745, 10));" + 
                 $"   SetCharacterImmortality(10000, Enabled);" +
                 $"   WaitFixedTimeFrames(30);" +
                 $"   if (!PlayerGender(Gender.Female)) {{" +

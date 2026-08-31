@@ -105,7 +105,7 @@ public static class FogGates
     //m27_00_00_01 Forbidden Woods (8)
     public static FogGate ShadowsOfYharnamArenaEntrance = new FogGate("Shadows of Yharnam Arena Entrance", 2700998, 2701802, [], [Requirements.ForbiddenWoodsAccess], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
     public static FogGate ShadowsOfYharnamEntrance      = new FogGate("Shadows of Yharnam Entrance", 2700997, 2701800, [], [Requirements.ForbiddenWoodsAccess, Requirements.TonsilStoneObtained], Maps.ForbiddenWoods);
-    public static FogGate ShadowsOfYharnamArenaExit = new FogGate("Shadows of Yharnam Arena Exit", 2700996, 2701803, Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
+    public static FogGate ShadowsOfYharnamArenaExit = new FogGate("Shadows of Yharnam Arena Exit", 2700996, 2701803, [], [Requirements.ForbiddenWoodsAccess], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
     public static FogGate ShadowsOfYharnamExit      = new FogGate("Shadows of Yharnam Exit", 2700995, 2701801, Maps.ForbiddenWoods);
     public static FogGate MPGWoodsEntranceToWoods = 
         new FogGate("MPG at Beginning of Forbidden Woods, towards Woods", 2700994, 2707999, [], [Requirements.ForbiddenWoodsAccess, Requirements.TonsilStoneObtained], Maps.ForbiddenWoods);
