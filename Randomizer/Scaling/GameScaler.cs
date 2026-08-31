@@ -105,16 +105,18 @@ public class GameScaler
                     ushort atkMag = (ushort)row["atkMag"].Value;
                     ushort atkFire = (ushort)row["atkFire"].Value;
                     ushort atkThun = (ushort)row["atkThun"].Value;
+                    
+                    //How far along in tree we are (0 - 1)
+                    float percentage = (float)depth / maxDepth;
+                    float treeTier = percentage * 25f;
 
-                    //Don't Scale below 0.5,
-                    //Doesn't do any damage below that (idk why)
-                    float percentage = Math.Max(depth / (float)maxDepth / (boss.ScalingTier * 0.1f), 0.35f); 
+                    float multiplier = Math.Max(treeTier / boss.ScalingTier, 0.4f);
 
                     //Scaling Damage Value
-                    int atkPhysScaled = Math.Max((int)Math.Round(atkPhys * percentage * _difficultyModifier), 1);
-                    int atkMagScaled =  (int)Math.Round(atkMag * percentage * _difficultyModifier);
-                    int atkFireScaled =  (int)Math.Round(atkFire * percentage * _difficultyModifier);
-                    int atkThunScaled =  (int)Math.Round(atkThun * percentage * _difficultyModifier);
+                    int atkPhysScaled = Math.Max((int)Math.Round(atkPhys * multiplier * _difficultyModifier), 1);
+                    int atkMagScaled =  (int)Math.Round(atkMag * multiplier * _difficultyModifier);
+                    int atkFireScaled =  (int)Math.Round(atkFire * multiplier * _difficultyModifier);
+                    int atkThunScaled =  (int)Math.Round(atkThun * multiplier * _difficultyModifier);
                     
                     //Setting Values in the Param Row
                     row["atkPhys"].Value = (ushort)atkPhysScaled;
@@ -134,7 +136,7 @@ public class GameScaler
     {
         //How far along in tree we are (0 - 1)
         float percentage = (float)depth / maxDepth;
-        float treeTier = percentage * 20f;
+        float treeTier = percentage * 25f;
 
         float multiplier = treeTier / boss.ScalingTier;
         
