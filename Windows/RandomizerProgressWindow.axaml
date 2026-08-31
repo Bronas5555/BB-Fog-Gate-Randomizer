@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="200"
         x:Class="BB_Fog_Gate_Randomizer.Windows.RandomizerProgressWindow"
-        Title="RandomizerProgressWindow"
+        Title="Randomizing"
         Width="350"
         Height="200"
         CanResize="False">
@@ -17,7 +17,7 @@
                 HorizontalAlignment="Center"
                 FontSize="24"
                 Grid.Row="0"
-                Text="Randomizing"></TextBlock>
+                Text="Randomizing..."></TextBlock>
             <Border
                 Grid.Row="1"
                 BorderBrush="White"

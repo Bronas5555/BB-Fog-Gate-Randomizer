@@ -5,7 +5,7 @@
         xmlns:controls="clr-namespace:BB_Fog_Gate_Randomizer.UserControls"
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
         x:Class="BB_Fog_Gate_Randomizer.MainWindow"
-        Title="BB_Fog_Gate_Randomizer"
+        Title="BB Fog Gate Randomizer"
         Width="600"
         Height="800">
     <Grid
