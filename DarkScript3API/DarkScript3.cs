@@ -11,7 +11,7 @@ namespace BB_Fog_Gate_Randomizer.DarkScript3API;
 public class DarkScript3
 {
     private static readonly string DarkScriptExe = "./binarys/DarkScript3.exe";
-    private static string _winePath = "/usr/bin/wine";
+    private static string _winePath = "wine";
     private static string? _winePrefixPath = null;
     public static async Task BatchDecompileAsync(string sourceFolder, string outputFolder)
     {
