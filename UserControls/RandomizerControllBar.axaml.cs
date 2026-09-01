@@ -6,6 +6,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Avalonia.Platform.Storage;
 using BB_Fog_Gate_Randomizer.DarkScript3API;
 using BB_Fog_Gate_Randomizer.Emevd;
 using BB_Fog_Gate_Randomizer.Presets;
@@ -39,8 +40,36 @@ public partial class RandomizerControllBar : UserControl
         LoadPresetButton.Click += LoadPresetButton_Click;
         DeletePresetButton.Click += DeletePresetButton_Click;
         PresetFolderButton.Click += PresetFolderButton_Click;
+        WinePrefixButton.Click += WinePrefixButton_Click;
             
         ReloadPresets();
+
+        if (OperatingSystem.IsWindows())
+        {
+            WinePrefixButton.IsVisible = false;
+        }
+    }
+
+    private async void WinePrefixButton_Click(object? sender, RoutedEventArgs e)
+    {
+        var storage = (TopLevel.GetTopLevel(this) as Window).StorageProvider;
+        if(!storage.CanPickFolder)
+        {
+            await UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(this) as Window, "Can't pick folder on this Platform");
+            return;
+        }
+
+        IReadOnlyList<IStorageFolder> list = await storage.OpenFolderPickerAsync(new FolderPickerOpenOptions
+        {
+            Title = "Choose Wine Prefix Folder",
+            SuggestedStartLocation = await storage.TryGetFolderFromPathAsync("~/"),
+            AllowMultiple = false,
+        });
+        
+        Console.WriteLine(list[0].Path.AbsolutePath);
+        DarkScript3.SetWinePrefixPath(list[0].Path.AbsolutePath);
+        UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(this) as Window,
+            "Active Wine Prefix is now " + list[0].Path.AbsolutePath);
     }
 
     private void PresetFolderButton_Click(object? sender, RoutedEventArgs e)
@@ -125,7 +154,7 @@ public partial class RandomizerControllBar : UserControl
     {
         if (!ValidateSeedInput())
         {
-            UiUtil.ShowErrorAsync(TopLevel.GetTopLevel(this) as Window, "Invalid Seed");
+            UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(this) as Window, "Invalid Seed");
             return;
         }
 

@@ -11,7 +11,8 @@ namespace BB_Fog_Gate_Randomizer.DarkScript3API;
 public class DarkScript3
 {
     private static readonly string DarkScriptExe = "./binarys/DarkScript3.exe";
-    private static string winePath = "/usr/bin/wine";
+    private static string _winePath = "/usr/bin/wine";
+    private static string? _winePrefixPath = null;
     public static async Task BatchDecompileAsync(string sourceFolder, string outputFolder)
     {
         if(OperatingSystem.IsWindows()) await BatchDecompileWindows(sourceFolder, outputFolder);
@@ -92,7 +93,7 @@ public class DarkScript3
     {
         ProcessStartInfo psi = new ProcessStartInfo
         {
-            FileName = winePath,
+            FileName = _winePath,
         };
         
         //Removing Enviroment Variables injected by Rider
@@ -110,9 +111,24 @@ public class DarkScript3
         }
         
         //TODO: Let user choose wineprefix
-        psi.Environment.Add("WINEPREFIX", "/home/jonas/.bbfoggaterandoprefix/");
+        psi.Environment.Add("WINEPREFIX", _winePrefixPath);
 
         return psi;
     }
-    
+    public static void SetWinePrefixPath(string path)
+    {
+        _winePrefixPath = path;
+
+        File.WriteAllText("./config.txt", path);
+        
+    }
+
+    public static void LoadWinePrefixPath()
+    {
+        if (File.Exists("./config.txt"))
+        {
+            _winePrefixPath = File.ReadAllText("./config.txt");
+            Console.WriteLine("Loaded Wine Prefix Path: " + _winePrefixPath);
+        }
+    }
 }

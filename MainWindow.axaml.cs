@@ -23,5 +23,6 @@ public partial class MainWindow : Window
         //RandomizerBenchmark.StartBenchmark();
         
         FolderStructure.EnsureFolderStructure();
+        DarkScript3.LoadWinePrefixPath();
     }
 }

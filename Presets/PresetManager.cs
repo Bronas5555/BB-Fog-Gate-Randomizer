@@ -60,7 +60,7 @@ public class PresetManager
             presetName == string.Empty)
         {
             Console.WriteLine("Preset name is null");
-            UiUtil.ShowErrorAsync(TopLevel.GetTopLevel(RandomizerControllBar.Instance) as Window, "Preset name is invalid");
+            UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(RandomizerControllBar.Instance) as Window, "Preset name is invalid");
             return false;
         }
         
@@ -94,7 +94,7 @@ public class PresetManager
                 RandomizerControllBar.Instance.SeedTextBox.RevealPassword
             );
         }
-        UiUtil.ShowErrorAsync(TopLevel.GetTopLevel(RandomizerControllBar.Instance) as Window, "Seed is invalid");
+        UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(RandomizerControllBar.Instance) as Window, "Seed is invalid");
         return null;
     }
 

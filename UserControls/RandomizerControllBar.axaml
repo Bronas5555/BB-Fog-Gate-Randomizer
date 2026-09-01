@@ -11,21 +11,30 @@
         Margin="5"
         ColumnDefinitions="Auto, *, Auto">
         <Grid
-            RowDefinitions="Auto, Auto"
+            RowDefinitions="Auto, Auto, Auto"
+            
             VerticalAlignment="Bottom"
             Grid.Column="0">
-                <Button 
-                    ToolTip.Tip="Launches the Live Tracker. It tells you where you can go from your current position. Has to be controlled manually."
-                    Grid.Row="0"
-                    Name="TrackerButton"
-                    HorizontalAlignment="Stretch">
+            <Button 
+                Name="WinePrefixButton"
+                Grid.Row="0"
+                HorizontalAlignment="Stretch">
+                <TextBlock 
+                    Text="Wine Prefix"
+                    HorizontalAlignment="Center"></TextBlock>
+            </Button>
+            <Button 
+                ToolTip.Tip="Launches the Live Tracker. It tells you where you can go from your current position. Has to be controlled manually."
+                Grid.Row="1"
+                Name="TrackerButton"
+                HorizontalAlignment="Stretch">
                         <TextBlock
                             Text="Tracker"
                             HorizontalAlignment="Center"></TextBlock>
                 </Button>
                 <Button 
                     ToolTip.Tip="Opens the Folder containing the Spoiler Logs."
-                    Grid.Row="1"
+                    Grid.Row="2"
                     HorizontalAlignment="Stretch"
                     Name="SpoilerLogsButton">Spoiler Logs</Button>
         </Grid>

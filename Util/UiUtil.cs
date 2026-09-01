@@ -9,7 +9,7 @@ namespace BB_Fog_Gate_Randomizer.Util;
 
 public class UiUtil
 {
-    public static async Task ShowErrorAsync(Window owner, string message)
+    public static async Task ShowMessageBoxAsync(Window owner, string message)
     {
         var dialog = new Window
         {
