@@ -166,7 +166,6 @@ public class GameScaler
             string name = file.Name.EndsWith(".param", StringComparison.OrdinalIgnoreCase)
                 ? file.Name.Substring(0, file.Name.Length - ".param".Length)
                 : file.Name;
-            Console.WriteLine("DEBUG: " + name);
             PARAM param = PARAM.Read(file.Bytes);
 
 
