@@ -25,7 +25,7 @@ This tutorial assumes you already have Bloodborne set up with shadPS4 (preferabl
 Install Microsoft [ASP.NET Core Runtime 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0).
 #### Step 1: Downloading the Randomizer and its dependencies
 Download the Randomizer app from the [Releases page](https://github.com/Bronas5555/BB-Fog-Gate-Randomizer/releases).
-To function, the Randomizer needs the app [DarkScript3](https://github.com/AinTunez/DarkScript3/releases)
+To function, the Randomizer needs the app [DarkScript3](https://github.com/AinTunez/DarkScript3/releases).
 Download it as well.
 Tested Version is 3.6.3.
 #### Step 2: Extracting Archives
