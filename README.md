@@ -4,7 +4,7 @@ A WIP Fog Gate Randomizer inspired by the Fog Gate Randomizers for [Elden Ring](
 This Randomizer isn't finished yet. Softlocks, Bugs and Glitches will occur. If you find any issues, please report them under the Issues tab.
 
 ## General Idea
-Fog Gates are permanent now and traversing them sends you to another randomly choosen Fog Gate. The warps are static, meaning they don't change. Traversing Gate A will always send you to Gate B and traversing back through Gate B will send you back to Gate A.
+Fog Gates are permanent now and traversing them sends you to another randomly chosen Fog Gate. The warps are static, meaning they don't change. Traversing Gate A will always send you to Gate B and traversing back through Gate B will send you back to Gate A.
 
 ## Features
 * Choose between Gates: Randomize All, or exclude the DLC
@@ -43,9 +43,9 @@ Now extract DarkScript3 to the Directory `binarys` inside the Randomizer.
 Start the Randomizer Application and adjust the Settings to your liking. Continue by choosing or generating a seed and pressing Randomize. Randomizing can take a little while.
 
 <details>
-<summary>Step3.1: For Linux users</summary>
+<summary>Step 3.1: For Linux users</summary>
 	
-Unfortunately there isn't a native version of DarkScript for Linux. However, the Randomizer supports running DarkScript3 through wine. As long as wine is installed, is in your `PATH` and you have installed the .NET 6.0 Desktop and ASP.NET Runtimes everything should just work. 
+Unfortunately there isn't a native version of DarkScript for Linux. However, the Randomizer supports running DarkScript3 through wine. As long as wine is installed, is in your `PATH` and you have installed the .NET 6.0 Desktop and ASP.NET Runtimes DarkScript3 needs everything should just work. The Wine Prefix can be set using the `Wine Prefix` Button.
 Test wine by running:
 ```bash
 	wine --version
