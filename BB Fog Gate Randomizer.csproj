@@ -16,7 +16,6 @@
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
         <PackageReference Include="JuicerMV.SoulsFormats" Version="0.1.4" />
-        <PackageReference Include="QuikGraph" Version="2.5.0" />
     </ItemGroup>
 
     <ItemGroup>
