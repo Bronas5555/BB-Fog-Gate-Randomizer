@@ -7,6 +7,7 @@ namespace BB_Fog_Gate_Randomizer.AppEnvironment;
 
 public class FolderStructure
 {
+    public static bool HasDarkScriptBinary = false;
     public static void EnsureFolderStructure()
     {
         if(!Directory.Exists("./binarys")) 
@@ -16,6 +17,10 @@ public class FolderStructure
             UiUtil.ShowMessageBoxAsync(
                 TopLevel.GetTopLevel(RandomizerControllBar.Instance) as Window, 
                 "DarkScript3.exe not found in the binarys Directory. The Randomizer needs this File to function. Download and extract it and all its accompanying Files to the binarys Directory in the Randomizer Application Directory.");
+        }
+        else
+        {
+            HasDarkScriptBinary = true;
         }
     }
 }

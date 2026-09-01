@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using System.IO;
 
@@ -26,6 +27,26 @@ public class FileUtil
         }
     }
     public static void OpenDirectoryInFileManager(string directory)
+    {
+        if(OperatingSystem.IsWindows()) OpenDirectoryInFileManagerWindows(directory);
+        else if(OperatingSystem.IsLinux()) OpenDirectoryInFileManagerLinux(directory);
+        else throw new Exception("Unsupported operating system");
+        
+    }
+
+    private static void OpenDirectoryInFileManagerWindows(string directory)
+    {
+        string fullPath = Path.GetFullPath(directory);
+
+        ProcessStartInfo psi = new ProcessStartInfo
+        {
+            FileName = "explorer.exe",
+            UseShellExecute = true
+        };
+        psi.ArgumentList.Add(fullPath);
+        Process.Start(psi);
+    }
+    private static void OpenDirectoryInFileManagerLinux(string directory)
     {
         if(!Directory.Exists(directory))
             throw new DirectoryNotFoundException(directory);

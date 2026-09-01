@@ -92,6 +92,6 @@ public class SpoilerLogBuilder
         {
             Directory.CreateDirectory("./Spoiler Logs/");
         }
-        File.WriteAllText("./Spoiler Logs/spoiler_" + DateTime.Now.ToString("yy-MM-dd HH:mm:ss") + ".log", spoilerLog);
+        File.WriteAllText("./Spoiler Logs/spoiler_" + DateTime.Now.ToString("yy-MM-dd HH-mm-ss") + ".log", spoilerLog);
     }
 }

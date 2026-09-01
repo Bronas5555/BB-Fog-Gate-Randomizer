@@ -7,6 +7,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Platform.Storage;
+using BB_Fog_Gate_Randomizer.AppEnvironment;
 using BB_Fog_Gate_Randomizer.DarkScript3API;
 using BB_Fog_Gate_Randomizer.Emevd;
 using BB_Fog_Gate_Randomizer.Presets;
@@ -152,6 +153,9 @@ public partial class RandomizerControllBar : UserControl
 
     private void RandomizeButton_Click(object? sender, RoutedEventArgs e)
     {
+        FolderStructure.EnsureFolderStructure();
+        if (!FolderStructure.HasDarkScriptBinary) return;
+        
         if (!ValidateSeedInput())
         {
             UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(this) as Window, "Invalid Seed");

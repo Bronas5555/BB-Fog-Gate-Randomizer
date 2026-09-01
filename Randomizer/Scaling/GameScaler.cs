@@ -163,7 +163,10 @@ public class GameScaler
 
         foreach (BinderFile file in _parambnd.Files)
         {
-            string name = Path.GetFileNameWithoutExtension(file.Name);
+            string name = file.Name.EndsWith(".param", StringComparison.OrdinalIgnoreCase)
+                ? file.Name.Substring(0, file.Name.Length - ".param".Length)
+                : file.Name;
+            Console.WriteLine("DEBUG: " + name);
             PARAM param = PARAM.Read(file.Bytes);
 
 
@@ -176,30 +179,7 @@ public class GameScaler
         
         npcParams = _parms["N:\\SPRJ\\data\\INTERROOT_ps4\\param\\GameParam\\64bit\\NpcParam"];
         npcAttackParams = _parms["N:\\SPRJ\\data\\INTERROOT_ps4\\param\\GameParam\\64bit\\AtkParam_Npc"];
-
-        /*foreach (var pair in parms)
-        {
-            Console.WriteLine(pair.Key);
-            foreach (var row in pair.Value.Rows)
-            {
-                BossNpcParamID? bossNpcParamId = HpValues.bossParams.FirstOrDefault(x => x.Id == row.ID);
-                if (bossNpcParamId != null)
-                {
-                    row["hp"].Value = (uint)10;
-                    Console.WriteLine(bossNpcParamId.Name + " hp: " + row["hp"]);
-                }
-            }
-        }
         
-        //Saving
-        foreach (BinderFile file in parambnd.Files)
-        {
-            string name = Path.GetFileNameWithoutExtension(file.Name);
-            if (parms.ContainsKey(name))
-                file.Bytes = parms[name].Write();
-        }
-
-        parambnd.Write("./Fog Gate Randomizer/Fog Gate Randomizer/dvdroot_ps4/param/gameparam/gameparam.parambnd.dcx");*/
     }
 
     private void SaveParam()

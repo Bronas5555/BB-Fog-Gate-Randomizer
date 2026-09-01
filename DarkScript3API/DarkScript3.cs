@@ -83,7 +83,7 @@ public class DarkScript3
 
     private static async Task BatchRecompileWindows(string sourceFolder, string outputFolder)
     {
-        string args = $"/cmd -game bb -indir {sourceFolder} .outdir {outputFolder} -compile -force -incremental";
+        string args = $"/cmd -game bb -indir {sourceFolder} -outdir {outputFolder} -compile -force -incremental";
         
         Process darkScript3Process = Process.Start(DarkScriptExe, args);
         await darkScript3Process.WaitForExitAsync();

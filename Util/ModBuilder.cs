@@ -13,6 +13,13 @@ public class ModBuilder
 
     public static void DeleteCreatedModFiles()
     {
-        Directory.Delete("./Fog Gate Randomizer/Fog Gate Randomizer/", true);
+        if (Directory.Exists("./Fog Gate Randomizer/Fog Gate Randomizer/"))
+        {
+            Directory.Delete("./Fog Gate Randomizer/Fog Gate Randomizer/", true);
+        }
+        else
+        {
+            Directory.CreateDirectory("./Fog Gate Randomizer/Fog Gate Randomizer/");
+        }
     }
 }

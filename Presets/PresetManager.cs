@@ -36,6 +36,7 @@ public class PresetManager
     }
     public static List<RandomizerSaveSettings> GetPresets()
     {
+        if(!File.Exists(_presetPath)) return new List<RandomizerSaveSettings>();
         string[] presetPaths = Directory.GetFiles(_presetPath, "*.json", SearchOption.TopDirectoryOnly);
         List<RandomizerSaveSettings> result = new List<RandomizerSaveSettings>();
 
