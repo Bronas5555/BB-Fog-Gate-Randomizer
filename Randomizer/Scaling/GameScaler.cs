@@ -110,14 +110,14 @@ public class GameScaler
                     float percentage = (float)depth / maxDepth;
                     float treeTier = percentage * 25f;
 
-                    float multiplier = Math.Max(treeTier / boss.ScalingTier, 0.4f);
-                    multiplier += _difficultyModifier;
+                    float multiplier = treeTier / boss.ScalingTier;
+                    multiplier *= _difficultyModifier;
 
                     //Scaling Damage Value
-                    int atkPhysScaled = Math.Max((int)Math.Round(atkPhys * multiplier * _difficultyModifier), 1);
-                    int atkMagScaled =  (int)Math.Round(atkMag * multiplier * _difficultyModifier);
-                    int atkFireScaled =  (int)Math.Round(atkFire * multiplier * _difficultyModifier);
-                    int atkThunScaled =  (int)Math.Round(atkThun * multiplier * _difficultyModifier);
+                    int atkPhysScaled = (int)Math.Round(atkPhys * multiplier);
+                    int atkMagScaled =  (int)Math.Round(atkMag * multiplier);
+                    int atkFireScaled =  (int)Math.Round(atkFire * multiplier);
+                    int atkThunScaled =  (int)Math.Round(atkThun * multiplier);
                     
                     //Setting Values in the Param Row
                     row["atkPhys"].Value = (ushort)atkPhysScaled;

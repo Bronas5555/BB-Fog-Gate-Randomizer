@@ -66,7 +66,7 @@ public partial class RandomizerControllBar : UserControl
             SuggestedStartLocation = await storage.TryGetFolderFromPathAsync("~/"),
             AllowMultiple = false,
         });
-        
+        if (list.Count == 0) return;
         Console.WriteLine(list[0].Path.AbsolutePath);
         DarkScript3.SetWinePrefixPath(list[0].Path.AbsolutePath);
         UiUtil.ShowMessageBoxAsync(TopLevel.GetTopLevel(this) as Window,
