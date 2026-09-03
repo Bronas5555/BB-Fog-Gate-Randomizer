@@ -23,12 +23,12 @@ public class Bosses
                 new ParamBoss(209010, [new NumberSpan(209000, 209200)], "Blood Starved Beast 2", 750, 4); //Bloodthirsty Beast Ruins
 
         public static readonly ParamBoss WitchofHemwick1 =
-                new ParamBoss(210020, [new NumberSpan(210000, 210066)], "Witch of Hemwick 1", 1200, 3); //Eye Collector
+                new ParamBoss(210020, [new NumberSpan(210000, 210066)], "Witch of Hemwick 1", 1200, 5); //Eye Collector
         public static readonly ParamBoss WitchofHemwick2 =
-                new ParamBoss(210025, [new NumberSpan(210000, 210066)], "Witch of hemwick 2", 1200, 3); //Eye Collector for Old Castles
+                new ParamBoss(210025, [new NumberSpan(210000, 210066)], "Witch of hemwick 2", 1200, 5); //Eye Collector for Old Castles
 
         public static readonly ParamBoss VicarAmelia = new ParamBoss(502000,
-                [new NumberSpan(3332, 3338), new NumberSpan(502000, 514310)], "Vicar Amelia", 2500, 6); //Saint Beast Catherdal A
+                [new NumberSpan(3332, 3338), new NumberSpan(502000, 502140)], "Vicar Amelia", 2500, 6); //Saint Beast Catherdal A
 
         public static readonly ParamBoss MartyLogarius =
                 new ParamBoss(232000, [new NumberSpan(230000, 230095)], "Martyr Logarius", 1600, 10); //King's Death Old Castle

@@ -7,3 +7,6 @@ Integrate Snatcher Warps. Needs Blood Starved beast Dead, but becomes unavailabl
 MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl Warp doesn't work
 
 Laurence test behavior, if skull is obtained before pendant
+
+Check Vixar Amelias Attack IDs, semms to also scale some other 
+(Darkbeast Paarl, Snake Ball (maybe Shadows of Yharnam?), Failed evil god, Idiot Spider, Silver Beast?, Evil God, 
