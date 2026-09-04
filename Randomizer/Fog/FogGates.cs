@@ -26,7 +26,7 @@ public static class FogGates
         new FogGate("MPG At Door Entrance Hemwick Charnel Lane towards Cathedral Ward.", 2270006, 2271999, Maps.HemwickCharnelLane);
     
     //m23_00_00_01 Old Yharnam (8)
-    public static FogGate BloodStarvedBeastArenaEntrance = new FogGate("Blood Starved Beast Arena Entrance", 2370999, 2301801, Maps.OldYharnam, WarpEventType.FogGateEventFlag, 12301800, [Bosses.BloodStarvedBeast1, Bosses.BloodStarvedBeast2]);
+    public static FogGate BloodStarvedBeastArenaEntrance = new FogGate("Blood Starved Beast Arena Entrance", 2370999, 2301801, [], [Requirements.BloodStarvedBeastDefeated], Maps.OldYharnam, WarpEventType.FogGateEventFlag, 12301800, [Bosses.BloodStarvedBeast1, Bosses.BloodStarvedBeast2]);
     public static FogGate BloodStarvedBeastEntrance = new FogGate("Blood Starved Beast Entrance", 2375999, 2301800, Maps.OldYharnam);
     public static FogGate DarkbeastPaarlArenaEntrance = new FogGate("Darkbeast Paarl Arena Entrance", 2375998, 2301812, Maps.OldYharnam, WarpEventType.FogGateEventFlag, 12301700, [Bosses.DarkbeastPaarl]);
     public static FogGate DarkbeastPaarlEntrance = new FogGate("Darkbeast Paarl Entrance", 2375997, 2301810, Maps.OldYharnam);
@@ -40,17 +40,17 @@ public static class FogGates
     public static FogGate CathedralWardMPGToCathedralWard = new FogGate("Cathedral Ward MPG To Cathedral Ward", 2407999, 2471999, [], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate CathedralWardMPGToGascoigne = new FogGate("Cathedral Ward MPG To Gascoigne", 2407998, 2401999, Maps.CathedralWard);
     public static FogGate VicarAmeliaArenaEntrance = new FogGate("Vicar Amelia Arena Entrance", 2407997, 2471800, [], [Requirements.VicarAmeliaDefeated], Maps.CathedralWard, WarpEventType.FogGateEventFlag, 12401800, [Bosses.VicarAmelia]);
-    public static FogGate VicarAmeliaEntrance = new FogGate("Vicar Amelia Entrance", 2407996, 2401800, [], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+    public static FogGate VicarAmeliaEntrance = new FogGate("Vicar Amelia Entrance", 2407996, 2401800, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate MPGBeforeOldYharnamLanternTowardsOldYharnam =
         new FogGate("MPG Before Old Yharnam Lantern Towards Old Yharnam", 2407994, 2401997, Maps.CathedralWard);
     public static FogGate MPGBeforeOldYharnamLanternTowardsCathedralWard =
         new FogGate("MPG Before Old Yharnam Lantern Towards Cathedral Ward", 2407995, 2471997, [], [], Maps.CathedralWard);
     public static FogGate MPGBeforeSacrificalConnectionChurchCathedralWard = 
-        new FogGate("MPG before Church Before Yahar'gul towards Cathedral Ward", 2407993, 2471996, [], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+        new FogGate("MPG before Church Before Yahar'gul towards Cathedral Ward", 2407993, 2471996, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate MPGBeforeSacrificalConnectionChurchChurch = 
         new FogGate("MPG before Church Before Yahar'gul towards Church", 2407992, 2401996, [], [], Maps.CathedralWard);
     public static FogGate MPGInfrontHemwickCharnelLaneCathedralWard = 
-        new FogGate("MPG Infront Hemwick Charnel Lane, towards Cathedral Ward", 2407991, 2471995, [], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+        new FogGate("MPG Infront Hemwick Charnel Lane, towards Cathedral Ward", 2407991, 2471995, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate MPGInfrontHemwickCharnelLaneHemwick = 
         new FogGate("MPG Infront Hemwick Charnel Lane, towards Hemwick Charnel Lane", 2407990, 2401995, Maps.CathedralWard);
     public static FogGate WarpToOldHuntersDLC = new FogGate("Warp to Old Hunters DLC", 2407989, 2401994, [Requirements.VicarAmeliaDefeated], [], Maps.CathedralWard, WarpEventType.DLCWarp);

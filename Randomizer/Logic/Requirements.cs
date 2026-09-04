@@ -10,5 +10,6 @@ public class Requirements
     public static readonly Requirement TonsilStoneObtained = new Requirement(new Item("TonsilStone"), [ForbiddenWoodsAccess]);
     public static readonly Requirement WitchOfHemwickDefeated = new Requirement(RequirementType.WorldState, "WitchOfHemwickDefeated");
     public static readonly Requirement EyePendant = new Requirement(new Item("EyePendant"));
+    public static readonly Requirement BloodStarvedBeastDefeated = new Requirement(RequirementType.BossDefeated, "BloodStarvedBeastDefeated");
 
 }

@@ -108,9 +108,9 @@ public class GameScaler
                     
                     //How far along in tree we are (0 - 1)
                     float percentage = (float)depth / maxDepth;
-                    float treeTier = percentage * 25f;
+                    float treeTier = percentage * 25f; //Max predefined tier is 25
 
-                    float multiplier = treeTier / boss.ScalingTier;
+                    float multiplier = treeTier / boss.ScalingTier * 0.5f;
                     multiplier *= _difficultyModifier;
 
                     //Scaling Damage Value
