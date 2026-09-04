@@ -10,3 +10,5 @@ Laurence test behavior, if skull is obtained before pendant
 
 Check Vixar Amelias Attack IDs, semms to also scale some other 
 (Darkbeast Paarl, Snake Ball (maybe Shadows of Yharnam?), Failed evil god, Idiot Spider, Silver Beast?, Evil God, 
+
+Implement Hunter Chief Emblem
