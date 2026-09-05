@@ -29,7 +29,7 @@ public class FogRandomizer
     {
          Generate(null);
          
-         //FogGates.GateAfterIosefkasClinicToClinic.Link(FogGates.WarpBackToLesserAmygdala);
+         //FogGates.GateAfterIosefkasClinicToClinic.Link(FogGates.MPGInfrontHemwickCharnelLaneCathedralWard);
          
          return _unusedGates.Count;
     }

@@ -36,7 +36,7 @@ public class SpoilerLogBuilder
         {
             sb.AppendLine(
                 $"{indent}{connector}[Go] {gate.MapName.Name}: {gate.Name} " +
-                $"(Requires: {gate.Requirements[0]}) " +
+                $"(Requires: {BuildRequirementsString(gate)}) " +
                 $"{(visited ? "(Loop)" : "")}");
         }
         else
@@ -61,7 +61,7 @@ public class SpoilerLogBuilder
             sb.AppendLine(
                 $"{warpIndent}└── [Warp] " +
                 $"{gate.LinkedFogGate.MapName.Name}: {gate.LinkedFogGate.Name} " +
-                $"(Reward: {gate.LinkedFogGate.Rewards[0]})");
+                $"(Reward: {BuildRewardsString(gate.LinkedFogGate)})");
         }
         else
         {
@@ -84,6 +84,41 @@ public class SpoilerLogBuilder
                 indent + (isLast ? "    " : "│   ") + "    ",
                 childIsLast);
         }
+    }
+
+    private static string BuildRequirementsString(FogGate gate)
+    {
+        string result = "";
+        foreach (var requirement in gate.Requirements)
+        {
+            if (gate.Requirements.IndexOf(requirement) == gate.Requirements.Count - 1)
+            {
+                result += requirement.ToString();
+            }
+            else
+            {
+                result += requirement.ToString() + ", ";
+            }
+            
+        }
+        return result;
+    }
+    private static string BuildRewardsString(FogGate gate)
+    {
+        string result = "";
+        foreach (var reward in gate.Rewards)
+        {
+            if (gate.Rewards.IndexOf(reward) == gate.Rewards.Count - 1)
+            {
+                result += reward.ToString();
+            }
+            else
+            {
+                result += reward.ToString() + ", ";
+            }
+            
+        }
+        return result;
     }
 
     public static void SaveSpoilerLog(string spoilerLog)

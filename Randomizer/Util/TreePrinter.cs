@@ -59,30 +59,4 @@ public class TreePrinter
                 childIsLast);
         }
     }
-    
-    public static void InteractiveWorldExploration(FogGate startGate)
-    {
-        Console.WriteLine("\n----------------------------------------------------------------------------------------------------------");
-        Console.WriteLine("[Teleport] " + startGate.Name + " -> " + startGate.LinkedFogGate.Name);
-
-        int i = 0;
-        foreach (var neighbour in startGate.LinkedFogGate.WalkNeighbours)
-        {
-            Console.WriteLine("[" + i + "] " + neighbour.Name);
-            i++;
-        }
-
-        try
-        {
-            int index = int.Parse(Console.ReadKey().KeyChar.ToString());
-
-            InteractiveWorldExploration(startGate.LinkedFogGate.WalkNeighbours[index]);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.Message);
-            InteractiveWorldExploration(startGate);
-        }
-    }
-    
 }

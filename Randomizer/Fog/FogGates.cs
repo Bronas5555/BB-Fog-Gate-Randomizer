@@ -40,17 +40,17 @@ public static class FogGates
     public static FogGate CathedralWardMPGToCathedralWard = new FogGate("Cathedral Ward MPG To Cathedral Ward", 2407999, 2471999, [], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate CathedralWardMPGToGascoigne = new FogGate("Cathedral Ward MPG To Gascoigne", 2407998, 2401999, Maps.CathedralWard);
     public static FogGate VicarAmeliaArenaEntrance = new FogGate("Vicar Amelia Arena Entrance", 2407997, 2471800, [], [Requirements.VicarAmeliaDefeated], Maps.CathedralWard, WarpEventType.FogGateEventFlag, 12401800, [Bosses.VicarAmelia]);
-    public static FogGate VicarAmeliaEntrance = new FogGate("Vicar Amelia Entrance", 2407996, 2401800, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+    public static FogGate VicarAmeliaEntrance = new FogGate("Vicar Amelia Entrance", 2407996, 2401800, [Requirements.InnerCathedralWardAccess], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
     public static FogGate MPGBeforeOldYharnamLanternTowardsOldYharnam =
         new FogGate("MPG Before Old Yharnam Lantern Towards Old Yharnam", 2407994, 2401997, Maps.CathedralWard);
     public static FogGate MPGBeforeOldYharnamLanternTowardsCathedralWard =
         new FogGate("MPG Before Old Yharnam Lantern Towards Cathedral Ward", 2407995, 2471997, [], [], Maps.CathedralWard);
     public static FogGate MPGBeforeSacrificalConnectionChurchCathedralWard = 
-        new FogGate("MPG before Church Before Yahar'gul towards Cathedral Ward", 2407993, 2471996, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+        new FogGate("MPG before Church Before Yahar'gul towards Cathedral Ward", 2407993, 2471996, [Requirements.InnerCathedralWardAccess], [Requirements.TonsilStoneObtained, Requirements.InnerCathedralWardAccess], Maps.CathedralWard);
     public static FogGate MPGBeforeSacrificalConnectionChurchChurch = 
         new FogGate("MPG before Church Before Yahar'gul towards Church", 2407992, 2401996, [], [], Maps.CathedralWard);
     public static FogGate MPGInfrontHemwickCharnelLaneCathedralWard = 
-        new FogGate("MPG Infront Hemwick Charnel Lane, towards Cathedral Ward", 2407991, 2471995, [Requirements.BloodStarvedBeastDefeated], [Requirements.TonsilStoneObtained], Maps.CathedralWard);
+        new FogGate("MPG Infront Hemwick Charnel Lane, towards Cathedral Ward", 2407991, 2471995, [Requirements.InnerCathedralWardAccess], [Requirements.TonsilStoneObtained, Requirements.InnerCathedralWardAccess], Maps.CathedralWard);
     public static FogGate MPGInfrontHemwickCharnelLaneHemwick = 
         new FogGate("MPG Infront Hemwick Charnel Lane, towards Hemwick Charnel Lane", 2407990, 2401995, Maps.CathedralWard);
     public static FogGate WarpToOldHuntersDLC = new FogGate("Warp to Old Hunters DLC", 2407989, 2401994, [Requirements.VicarAmeliaDefeated], [], Maps.CathedralWard, WarpEventType.DLCWarp);
@@ -66,14 +66,14 @@ public static class FogGates
         new FogGate("Metal Gate after Iosefkas Clinic Clinic Side", 2491030, 2491811, Maps.CentralYharnam);
     public static FogGate GateAfterIosefkasClinicToFirstLamp =
         new FogGate("Metal Gate after Iosefkas Clinic Towards First Lamp", 2491031, 2491812, [], [Requirements.TonsilStoneObtained], Maps.CentralYharnam);
-    public static FogGate ClericBeastArenaEntrance = new FogGate("Cleric Beast Arena Entrance", 2490997, 2417800, Maps.CentralYharnam, WarpEventType.FogGateEventFlag, 12411700, [Bosses.ClericBeast1, Bosses.ClericBeast2]);
+    public static FogGate ClericBeastArenaEntrance = new FogGate("Cleric Beast Arena Entrance", 2490997, 2417800, [], [Requirements.HunterChiefEmblem], Maps.CentralYharnam, WarpEventType.FogGateEventFlag, 12411700, [Bosses.ClericBeast1, Bosses.ClericBeast2]);
     public static FogGate ClericBeastEntrance = new FogGate("Cleric Beast Entrance", 2490996, 2411800, [], [Requirements.TonsilStoneObtained], Maps.CentralYharnam);
 
     //m24_02_00_01 Upper Cathedral Ward (8)
     public static FogGate MPGUpperCathedralWardUpper = 
         new FogGate("MPG Upper Cathedral Ward towards Upper Cathedral Ward", 2420997, 2427999, Maps.UpperCathedralWard, WarpEventType.FogGate, -1, [Bosses.OrphanageKeyBrainSucker1, Bosses.OrphanageKeyBrainSucker2]);
     public static FogGate MPGUpperCathedralCathedralWard = 
-        new FogGate("MPG Upper Cathedral Ward towards Cathedral Ward", 2420996 , 2421999, [Requirements.UpperCathedralWardKey], [], Maps.UpperCathedralWard);
+        new FogGate("MPG Upper Cathedral Ward towards Cathedral Ward", 2420996 , 2421999, [Requirements.UpperCathedralWardKey, Requirements.BloodStarvedBeastDefeated], [], Maps.UpperCathedralWard);
     public static FogGate EbrietasaArenaEntrance = new FogGate("Ebrietas Arena Entrance", 2420995, 2421801, Maps.UpperCathedralWard, WarpEventType.FogGateEventFlag, 12421800, [Bosses.Ebrietas]);
     public static FogGate EbrietasaEntrance = new FogGate("Ebrietas Entrance", 2420994, 2421800, Maps.UpperCathedralWard);
     public static FogGate CelestialEmissaryArenaEntrance = 
@@ -103,9 +103,9 @@ public static class FogGates
         new FogGate("Micolash Bridge Arena Exit", 2600992, 2601858, [], [], Maps.NightmareOfMensis, WarpEventType.FogGateEventFlag, 12601850);
     
     //m27_00_00_01 Forbidden Woods (8)
-    public static FogGate ShadowsOfYharnamArenaEntrance = new FogGate("Shadows of Yharnam Arena Entrance", 2700998, 2701802, [], [Requirements.ForbiddenWoodsAccess], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
+    public static FogGate ShadowsOfYharnamArenaEntrance = new FogGate("Shadows of Yharnam Arena Entrance", 2700998, 2701802, [], [], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
     public static FogGate ShadowsOfYharnamEntrance      = new FogGate("Shadows of Yharnam Entrance", 2700997, 2701800, [], [Requirements.ForbiddenWoodsAccess, Requirements.TonsilStoneObtained], Maps.ForbiddenWoods);
-    public static FogGate ShadowsOfYharnamArenaExit = new FogGate("Shadows of Yharnam Arena Exit", 2700996, 2701803, [], [Requirements.ForbiddenWoodsAccess], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
+    public static FogGate ShadowsOfYharnamArenaExit = new FogGate("Shadows of Yharnam Arena Exit", 2700996, 2701803, [], [], Maps.ForbiddenWoods, WarpEventType.FogGateEventFlag, 12701800, [Bosses.ShadowOfYharnam1, Bosses.ShadowOfYharnam2, Bosses.ShadowOfYharnam3]);
     public static FogGate ShadowsOfYharnamExit      = new FogGate("Shadows of Yharnam Exit", 2700995, 2701801, Maps.ForbiddenWoods);
     public static FogGate MPGWoodsEntranceToWoods = 
         new FogGate("MPG at Beginning of Forbidden Woods, towards Woods", 2700994, 2707999, [], [Requirements.ForbiddenWoodsAccess, Requirements.TonsilStoneObtained], Maps.ForbiddenWoods);
@@ -128,12 +128,12 @@ public static class FogGates
     public static FogGate MPGHypogeanGoalPaarl =
         new FogGate("MPG Hypogean Goal Cave to Darkbeast Paarl, towards Darkbeast Paarl", 2800991, 2801998, Maps.YahargulUnseenVillage);
     public static FogGate MPGHypogeanGoalGoal =
-        new FogGate("MPG Hypogean Goal Cave to Darkbeast Paarl, towards Hypogean Goal", 2800990, 2801997, [], [Requirements.UpperCathedralWardKey], Maps.YahargulUnseenVillage);
+        new FogGate("MPG Hypogean Goal Cave to Darkbeast Paarl, towards Hypogean Goal", 2800990, 2801997, [], [], Maps.YahargulUnseenVillage);
     public static FogGate WarpToLectureBuildingAfterOneReborn = 
         new FogGate("Warp to Nightmare of Mensis, after One Reborn", 2800994, 2801500, Maps.YahargulUnseenVillage);
     //Doesn't actually have interactionEntity, but needs to be set anyway, as eventID is generated from it
     public static FogGate WarpToLectureBuildingLesserAmygdala = 
-        new FogGate("Warp to Lecture Building, Lesser Amygdala (requires Tonsil Stone)", 2800989, 2801501, [Requirements.TonsilStoneObtained], [], Maps.YahargulUnseenVillage, WarpEventType.TonsilStoneWarp); 
+        new FogGate("Warp to Lecture Building, Lesser Amygdala", 2800989, 2801501, [Requirements.TonsilStoneObtained], [], Maps.YahargulUnseenVillage, WarpEventType.TonsilStoneWarp); 
     
     //m32_00_00_01 Byrgenwerth (8)
     public static FogGate MPGBeginningByrgenwerthWoods = 
@@ -247,13 +247,15 @@ public static class FogGates
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
             MPGBeforeSacrificalConnectionChurchCathedralWard,
             MPGInfrontHemwickCharnelLaneCathedralWard,
-            CathedralWardMPGToCathedralWard]);
+            CathedralWardMPGToCathedralWard,
+            MPGUpperCathedralCathedralWard]);
         CathedralWardMPGToCathedralWard.SetupWalkNeighbours([
             VicarAmeliaEntrance,
             MPGBeforeOldYharnamLanternTowardsCathedralWard, 
             MPGBeforeSacrificalConnectionChurchCathedralWard, 
             MPGInfrontHemwickCharnelLaneCathedralWard,
-            WarpToOldHuntersDLC]);
+            WarpToOldHuntersDLC,
+            MPGUpperCathedralCathedralWard]);
         VicarAmeliaEntrance.SetupWalkNeighbours([]); //Door can only be opened from other side
         MPGBeforeOldYharnamLanternTowardsCathedralWard.SetupWalkNeighbours([]); //Contraption
         MPGBeforeSacrificalConnectionChurchCathedralWard.SetupWalkNeighbours([
@@ -261,13 +263,15 @@ public static class FogGates
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
             MPGInfrontHemwickCharnelLaneCathedralWard,
             CathedralWardMPGToCathedralWard,
-            WarpToOldHuntersDLC]);
+            WarpToOldHuntersDLC,
+            MPGUpperCathedralCathedralWard]);
         MPGInfrontHemwickCharnelLaneCathedralWard.SetupWalkNeighbours([
             CathedralWardMPGToCathedralWard,
             VicarAmeliaEntrance,
             MPGBeforeOldYharnamLanternTowardsCathedralWard,
             MPGBeforeSacrificalConnectionChurchCathedralWard,
-            WarpToOldHuntersDLC]);
+            WarpToOldHuntersDLC,
+            MPGUpperCathedralCathedralWard]);
         MPGInfrontHemwickCharnelLaneHemwick.SetupWalkNeighbours([MPGHemwickCharnelLaneCathedral]);
         
         //m24_01_00_01 Central Yaharnam (8)
